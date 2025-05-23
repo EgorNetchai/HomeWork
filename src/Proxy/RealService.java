@@ -1,6 +1,6 @@
 package Proxy;
 
-public class RealService implements Service{
+public class RealService implements Service {
     @Override
     public void performAction() {
         System.out.println("RealService: Performing action:");

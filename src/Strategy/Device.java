@@ -3,7 +3,7 @@ package Strategy;
 public class Device {
     private VideoStrategy videoStrategy;
 
-    public void setVideoStrategy (VideoStrategy videoStrategy) {
+    public void setVideoStrategy(VideoStrategy videoStrategy) {
         this.videoStrategy = videoStrategy;
     }
 

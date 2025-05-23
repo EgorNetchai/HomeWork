@@ -1,6 +1,8 @@
 package Decorator;
 
-public class Coffee implements Drink{
+public class Coffee implements Drink {
+    private final double COFFE_PRICE = 50.0d;
+
     @Override
     public String getDescription() {
         return "Coffee";
@@ -8,6 +10,6 @@ public class Coffee implements Drink{
 
     @Override
     public double getPrice() {
-        return 50.0d;
+        return COFFE_PRICE;
     }
 }

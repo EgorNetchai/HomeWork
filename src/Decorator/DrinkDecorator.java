@@ -1,6 +1,6 @@
 package Decorator;
 
-public abstract class DrinkDecorator implements Drink{
+public abstract class DrinkDecorator implements Drink {
     protected Drink wrappedDrink;
 
     public DrinkDecorator(Drink wrappedDrink) {

@@ -1,6 +1,8 @@
 package Decorator;
 
-public class Cinnamon extends DrinkDecorator{
+public class Cinnamon extends DrinkDecorator {
+    private final double CINNAMON_PRICE = 10.0d;
+
     public Cinnamon(Drink wrappedDrink) {
         super(wrappedDrink);
     }
@@ -12,6 +14,6 @@ public class Cinnamon extends DrinkDecorator{
 
     @Override
     public double getPrice() {
-        return wrappedDrink.getPrice() + 10.0d;
+        return wrappedDrink.getPrice() + CINNAMON_PRICE;
     }
 }

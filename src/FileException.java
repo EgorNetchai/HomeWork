@@ -1,4 +1,4 @@
-public class FileException extends Exception{
+public class FileException extends Exception {
     FileException(String message) {
         super(message);
     }

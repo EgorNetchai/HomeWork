@@ -1,4 +1,6 @@
-package Strategy;public class StrategyDemo {
+package Strategy;
+
+public class StrategyDemo {
     public static void main(String[] args) {
         Device device = new Device();
 

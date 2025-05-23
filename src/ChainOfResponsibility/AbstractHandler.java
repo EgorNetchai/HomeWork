@@ -1,7 +1,7 @@
 package ChainOfResponsibility;
 
-public abstract class AbstractHandler implements Handler{
-   private Handler nextHandler;
+public abstract class AbstractHandler implements Handler {
+    private Handler nextHandler;
 
     @Override
     public void setNextHandler(Handler nextHandler) {

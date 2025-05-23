@@ -1,17 +1,17 @@
 package Adapter;
 
-public class ImageProcessorAdapter implements ImageProcessor{
-    private final ThirdPartyImageLibrary THIRD_PARTY_LIBRARY;
+public class ImageProcessorAdapter implements ImageProcessor {
+    private final ThirdPartyImageLibrary thirdPartyImageLibrary;
     private String loadedImage;
 
     public ImageProcessorAdapter(ThirdPartyImageLibrary THIRD_PARTY_LIBRARY) {
-        this.THIRD_PARTY_LIBRARY = THIRD_PARTY_LIBRARY;
+        this.thirdPartyImageLibrary = THIRD_PARTY_LIBRARY;
     }
 
     @Override
     public void loadImage(String fileName) {
         System.out.println("ImageProcessorAdapter: Loading image via adapter...");
-        this.loadedImage = THIRD_PARTY_LIBRARY.load(fileName);
+        this.loadedImage = thirdPartyImageLibrary.load(fileName);
     }
 
     @Override
@@ -20,7 +20,7 @@ public class ImageProcessorAdapter implements ImageProcessor{
             throw new IllegalStateException("Image not loaded!");
         }
         System.out.println("ImageProcessorAdapter: Image processing via adapter...");
-        this.loadedImage = THIRD_PARTY_LIBRARY.applyFilter(loadedImage);
+        this.loadedImage = thirdPartyImageLibrary.applyFilter(loadedImage);
     }
 
     @Override
@@ -29,6 +29,6 @@ public class ImageProcessorAdapter implements ImageProcessor{
             throw new IllegalStateException("Image not loaded or not processed!");
         }
         System.out.println("ImageProcessorAdapter: Saving image via adapter...");
-        THIRD_PARTY_LIBRARY.export(loadedImage);
+        thirdPartyImageLibrary.export(loadedImage);
     }
 }

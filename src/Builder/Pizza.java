@@ -1,18 +1,18 @@
 package Builder;
 
 public class Pizza {
-    private final String SIZE;
-    private final String DOUGH;
-    private final boolean CHEESE;
-    private final boolean PEPPERONI;
-    private final boolean MUSHROOMS;
+    private final String size;
+    private final String dough;
+    private final boolean cheese;
+    private final boolean pepperoni;
+    private final boolean mushrooms;
 
-    private Pizza (String size, String dough, boolean cheese, boolean pepperoni, boolean mushrooms) {
-        this.SIZE = size;
-        this.DOUGH = dough;
-        this.CHEESE = cheese;
-        this.PEPPERONI = pepperoni;
-        this.MUSHROOMS = mushrooms;
+    private Pizza(String size, String dough, boolean cheese, boolean pepperoni, boolean mushrooms) {
+        this.size = size;
+        this.dough = dough;
+        this.cheese = cheese;
+        this.pepperoni = pepperoni;
+        this.mushrooms = mushrooms;
     }
 
     static Pizza createPizza(String size, String dough, boolean cheese, boolean pepperoni, boolean mushrooms) {
@@ -22,11 +22,11 @@ public class Pizza {
     @Override
     public String toString() {
         return "Pizza -> {" +
-                "size='" + SIZE + '\'' +
-                ", dough='" + DOUGH + '\'' +
-                ", cheese='" + CHEESE + '\'' +
-                ", pepperoni='" + PEPPERONI + '\'' +
-                ", mushrooms='" + MUSHROOMS + '\'' +
+                "size='" + size + '\'' +
+                ", dough='" + dough + '\'' +
+                ", cheese='" + cheese + '\'' +
+                ", pepperoni='" + pepperoni + '\'' +
+                ", mushrooms='" + mushrooms + '\'' +
                 '}';
     }
 }

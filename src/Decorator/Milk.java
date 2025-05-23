@@ -1,6 +1,8 @@
 package Decorator;
 
-public class Milk extends DrinkDecorator{
+public class Milk extends DrinkDecorator {
+    private final double MILK_PRICE = 5.0d;
+
     public Milk(Drink wrappedDrink) {
         super(wrappedDrink);
     }
@@ -12,6 +14,6 @@ public class Milk extends DrinkDecorator{
 
     @Override
     public double getPrice() {
-        return wrappedDrink.getPrice() + 5.0d;
+        return wrappedDrink.getPrice() + MILK_PRICE;
     }
 }

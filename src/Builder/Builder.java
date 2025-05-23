@@ -3,31 +3,31 @@ package Builder;
 public class Builder {
     private String size = "Medium";
     private String dough = "Thin";
-    private boolean cheese = false;
-    private boolean pepperoni = false;
-    private boolean mushrooms = false;
+    private boolean cheese;
+    private boolean pepperoni;
+    private boolean mushrooms;
 
-    public Builder setSize(String size) {
+    public Builder size(String size) {
         this.size = size;
         return this;
     }
 
-    public Builder setDough(String dough) {
+    public Builder dough(String dough) {
         this.dough = dough;
         return this;
     }
 
-    public Builder addCheese(boolean cheese) {
+    public Builder cheese(boolean cheese) {
         this.cheese = cheese;
         return this;
     }
 
-    public Builder addPepperoni(boolean pepperoni) {
+    public Builder pepperoni(boolean pepperoni) {
         this.pepperoni = pepperoni;
         return this;
     }
 
-    public Builder addMushrooms(boolean mushrooms) {
+    public Builder mushrooms(boolean mushrooms) {
         this.mushrooms = mushrooms;
         return this;
     }

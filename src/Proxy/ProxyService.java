@@ -1,6 +1,6 @@
 package Proxy;
 
-public class ProxyService implements Service{
+public class ProxyService implements Service {
     private RealService realService;
 
     @Override

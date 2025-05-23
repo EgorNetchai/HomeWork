@@ -3,7 +3,7 @@ import java.io.*;
 public class FileHandler {
     public void writeToFile(String filePath, String data, boolean append) throws FileException {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath, append))) {
-            if(append) {
+            if (append) {
                 writer.newLine();
             }
             writer.write(data);
@@ -17,7 +17,7 @@ public class FileHandler {
         StringBuilder content = new StringBuilder();
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             String line;
-            while((line = reader.readLine()) != null) {
+            while ((line = reader.readLine()) != null) {
                 content.append(line).append("\n");
             }
         } catch (IOException e) {
